@@ -6,6 +6,9 @@ output:
   html_document:
     toc: true
     toc_float: true
+    toc_depth: 3
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -75,8 +78,9 @@ ggplot(q, aes(x = Date, y = q)) +
 q_xts <- xts(q$q, order.by = q$Date)
 
 
-dygraph(q_xts) %>%
-  dyAxis("y", label = "Discharge (cfs)") 
+dygraph(q_xts, main = "Discharge in the Poudre River, Fort Collins, CO") %>%
+  dyAxis("y", label = "Discharge (cfs)")
+
 ```
 
 
@@ -84,20 +88,33 @@ dygraph(q_xts) %>%
 # Assignment. 
 
 
-This assignment will be primarily about demonstrating some expertice in using
+This assignment will be primarily about demonstrating some expertise in using
 RMarkdown, since we will be using Rmds as the primary form of homework and 
 assignments. With that in mind, your assignment for this homework is to:
 
 
-1) Fork the example repository into your personal GitHub
+## 1) Fork the example repository into your personal GitHub
 
-2) Create an RStudio project from your Personal clone of the Repo. 
 
-3) Create a table of contents that is floating, but displays three levels of
+
+## 2) Create an RStudio project from your Personal clone of the Repo. 
+
+## 3) Create a table of contents that is floating, but displays three levels of
 headers instead of two (by editing the content at the beginning of the document)
 
-4) Make a version of the `dygraph` with points and lines by using rstudio's
+## 4) Make a version of the `dygraph` with points and lines by using rstudio's
 dygraph [guide](https://rstudio.github.io/dygraphs/)
+
+```{r}
+
+q_xts <- xts(q$q, order.by = q$Date)
+
+
+dygraph(q_xts, main = "Discharge in the Poudre River, Fort Collins, CO") %>%
+  dyAxis("y", label = "Discharge (cfs)") %>%
+  dyOptions(drawPoints = TRUE, pointSize = 2)
+
+```
 
 5) Writing a paragraph on the Poudre river with at least three hyperlinks,
 **two bolded sections**, and one *italicized phrase*. The content of this paragraph

@@ -1,7 +1,7 @@
 ---
 title: "Discharge Data Example"
-author: "Matthew Ross"
-date: "1/24/2022"
+author: "Matthew Ross | assignment completed by George Woolsey"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
     toc: true
@@ -140,4 +140,4 @@ dygraph(q_xts, main = "Discharge in the Poudre River, Fort Collins, CO") %>%
 
 ## Poudre Paragraph
 
-The Cache la Poudre River in Larimer County, Colorado is *one of 55 designated [National Heritage Areas](https://www.nps.gov/places/cache-la-poudre-river-national-heritage-area.htm)* in the United States. The river showcases historical developments built by early Euro-American settlers, a popular trail system which follows the river through Fort Collins, and miles of natural beauty which, despite increasing human development, remains prime wildlife habitat. The **Bird Conservancy of the Rockies** has organized a community science project to study Eastern Screech-Owls along the Cache la Poudre River in Fort Collins and is currently [seeking volunteer surveyors](https://www.birdconservancy.org/get-involved/volunteer/citizen-science/) for the period March to mid-May. For those interested in the water flow dynamics of the river, there are several stream gauges maintained by **Colorado Division of Water Resources** with [open access to data](https://dwr.state.co.us/Tools/Stations?Stations=All&submitButton=Submit&SelectedGeoValue=waterDivisionDiv&SelectedWaterDivisionId=1&SelectedStationType=Stream%20Gage&SelectedAdditionalValue=waterSourceDiv&WaterSourceDropdownSearch.WaterSourceName=00205018&WaterSourceDropdownSearch.DbSetNum=37).
+  The Cache la Poudre River in Larimer County, Colorado is *one of 55 designated [National Heritage Areas](https://www.nps.gov/places/cache-la-poudre-river-national-heritage-area.htm)* in the United States. The river showcases historical developments built by early Euro-American settlers, a popular trail system which follows the river through Fort Collins, and miles of natural beauty which, despite increasing human development, remains prime wildlife habitat. The **Bird Conservancy of the Rockies** has organized a community science project to study Eastern Screech-Owls along the Cache la Poudre River in Fort Collins and is currently [seeking volunteer surveyors](https://www.birdconservancy.org/get-involved/volunteer/citizen-science/) for the period March to mid-May. For those interested in the water flow dynamics of the river, there are several stream gauges maintained by **Colorado Division of Water Resources** with [open access to data](https://dwr.state.co.us/Tools/Stations?Stations=All&submitButton=Submit&SelectedGeoValue=waterDivisionDiv&SelectedWaterDivisionId=1&SelectedStationType=Stream%20Gage&SelectedAdditionalValue=waterSourceDiv&WaterSourceDropdownSearch.WaterSourceName=00205018&WaterSourceDropdownSearch.DbSetNum=37).

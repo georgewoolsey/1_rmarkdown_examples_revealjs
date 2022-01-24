@@ -93,28 +93,17 @@ RMarkdown, since we will be using Rmds as the primary form of homework and
 assignments. With that in mind, your assignment for this homework is to:
 
 
-## 1) Fork the example repository into your personal GitHub
+1) Fork the example repository into your personal GitHub
 
 
+2) Create an RStudio project from your Personal clone of the Repo. 
 
-## 2) Create an RStudio project from your Personal clone of the Repo. 
-
-## 3) Create a table of contents that is floating, but displays three levels of
+3) Create a table of contents that is floating, but displays three levels of
 headers instead of two (by editing the content at the beginning of the document)
 
-## 4) Make a version of the `dygraph` with points and lines by using rstudio's
+4) Make a version of the `dygraph` with points and lines by using rstudio's
 dygraph [guide](https://rstudio.github.io/dygraphs/)
 
-```{r}
-
-q_xts <- xts(q$q, order.by = q$Date)
-
-
-dygraph(q_xts, main = "Discharge in the Poudre River, Fort Collins, CO") %>%
-  dyAxis("y", label = "Discharge (cfs)") %>%
-  dyOptions(drawPoints = TRUE, pointSize = 2)
-
-```
 
 5) Writing a paragraph on the Poudre river with at least three hyperlinks,
 **two bolded sections**, and one *italicized phrase*. The content of this paragraph
@@ -136,8 +125,18 @@ todays date, not just a static date you enter.
 
 ## DyGraph example. 
 
+```{r}
+
+q_xts <- xts(q$q, order.by = q$Date)
+
+
+dygraph(q_xts, main = "Discharge in the Poudre River, Fort Collins, CO") %>%
+  dyAxis("y", label = "Discharge (cfs)") %>%
+  dyOptions(drawPoints = TRUE, pointSize = 2)
+
+```
 
 ## Poudre Paragraph
 
-
+Despite upstream water diversion, the river, a designated National Heritage Area, remains prime wildlife habitat and features a popular trail system which follows the river through Fort Collins (Laflin 2005). Larimer County has experienced significant human population growth and development during the course of this study. The population increased from 299,630 in 2010 to 356,899 in 2019, a 19.1% increase compared to a 6.3% increase for the United States as a whole over the same time period (ACS 2019). The basin that contributes to the Cache la Poudre has an area of 4,896 km2 with waterflow driven primarily by snowmelt in the upper mountains with a hydrograph peak generally occurring in late May to June (Sexstone & Fassnacht 2013). The Cache la Poudre River is monitored at the canyon mouth, gaged by Colorado Division of Water Resources (CDSS 2019).
 

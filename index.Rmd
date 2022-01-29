@@ -34,13 +34,13 @@ library(revealjs)
 
 The Poudre River at Lincoln Bridge is:
 
-  - Downstream of only a little bit of urban stormwater
+  - Downstream of only a little bit of urban storm water
 
   - Near Odell Brewing CO
   
   - Near an open space area and the Poudre River Trail
   
-  - **Downstream of many agricultral diversions**
+  - **Downstream of many agriculture diversions**
 
 
 ## Site Description
